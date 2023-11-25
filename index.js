@@ -13,7 +13,7 @@ app.use(cors(corOptions))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-app.use("/",studentRoutes)
+app.use("/Student",studentRoutes)
 
 const PORT = process.env.PORT || 5000;
 
