@@ -28,6 +28,7 @@ db.sequelize = sequelize;
 
 // Importing the student model
 db.students = require("./studentModel")(sequelize, DataTypes);
+db.course = require("./courseModel")(sequelize, DataTypes);
 
 // Syncing our models with the database
 db.sequelize.sync({ force: false }).then(() => {
